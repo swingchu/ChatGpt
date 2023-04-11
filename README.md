@@ -12,5 +12,5 @@ OPENAI_API_KEY=sk-...lxnK
 - pip install openai
 - pip install python-dotenv
 
-## 4. Run
+### 4. Run
 py ./AskChatGpt.py

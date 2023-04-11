@@ -1,10 +1,11 @@
 import os
 import openai
+import gradio as gr
 from dotenv import load_dotenv
 
-load_dotenv()
 
 def AskChatGpt(question) :
+  load_dotenv()
   openai.api_key = os.getenv("OPENAI_API_KEY")
   #print(openai.api_key)
 
@@ -26,4 +27,9 @@ def main() :
   print('查詢中, 請稍候...')
   print(AskChatGpt(q_str))
 
-main()
+def main2() :
+  gui=gr.Interface(fn=AskChatGpt, inputs='text', outputs='text')
+  gui.launch()
+
+#main()
+main2()

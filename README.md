@@ -11,6 +11,7 @@ OPENAI_API_KEY=sk-...lxnK
 - python.exe -m pip install --upgrade pip
 - pip install openai
 - pip install python-dotenv
+- pip install gradio
 
 ## 4. Run
 py ./AskChatGpt.py

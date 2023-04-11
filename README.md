@@ -13,5 +13,5 @@ OPENAI_API_KEY=sk-...lxnK
 - pip install python-dotenv
 - pip install gradio
 
-## 4. Run
+### 4. Run
 py ./AskChatGpt.py
